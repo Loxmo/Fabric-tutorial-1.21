@@ -1,6 +1,7 @@
 package fr.loxmo.tutorialmod;
 
 import fr.loxmo.tutorialmod.block.ModBlocks;
+import fr.loxmo.tutorialmod.item.ModItemGroups;
 import fr.loxmo.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
+
         ModItems.registerModItem();
         ModBlocks.registerModBlocks();
 	}
