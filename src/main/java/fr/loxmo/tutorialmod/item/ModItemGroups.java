@@ -2,6 +2,7 @@ package fr.loxmo.tutorialmod.item;
 
 import fr.loxmo.tutorialmod.TutorialMod;
 import fr.loxmo.tutorialmod.block.ModBlocks;
+import fr.loxmo.tutorialmod.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -18,6 +19,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
+                        entries.add(ModItems.CHISEL);
 
                     }).build());
 
